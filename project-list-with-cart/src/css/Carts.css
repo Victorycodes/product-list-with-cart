@@ -1,0 +1,162 @@
+.orders {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 0 0 20px 30px;
+  width: 95%;
+}
+
+.imgHolder {
+  position: relative;
+}
+
+.desserts {
+  width: 200px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 65%;
+  gap: 3px;
+  left: 27%;
+  transform: translate(-24%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 7px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #5d5d5d;
+  font-size: 12px;
+}
+
+.btn:hover {
+  color: hsl(14, 86%, 42%);
+  border: 1px solid hsl(14, 86%, 42%);
+}
+
+.AddToCart {
+  width: 16px;
+}
+
+.controlIcon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.quantityControls {
+  position: absolute;
+  top: 65%;
+  gap: 10px;
+  left: 27%;
+  transform: translate(-24%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: hsl(14, 86%, 42%);
+}
+
+.nameLine {
+  font-size: 14px;
+  color: #555;
+  padding: 0px 10px;
+  margin: 16px 0 0 0;
+  text-align: left;
+}
+
+.titleLine {
+  font-size: 14px;
+  color: hsl(14, 65%, 9%);
+  margin: 5px 0 0 0;
+  text-align: left;
+}
+
+.priceLine {
+  font-size: 14px;
+  color: hsl(14, 86%, 42%);
+  margin: 5px 0 0 0;
+  text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 70px;
+  width: 70%;
+  grid-row-gap: 20px;
+}
+
+.box {
+  display: flex;
+}
+
+.leftWrapper {
+  width: 30%;
+  margin-top: -90px;
+}
+
+.inCart {
+  border: 2px solid hsl(14, 86%, 42%);
+}
+
+.controlIcon:hover {
+  background-color: white;
+  stroke: hsl(14, 86%, 42%);
+}
+
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .desserts {
+    width: 333px;
+    height: 200px;
+  }
+
+  .btn {
+    top: 64%;
+    left: 40%;
+  }
+
+  .quantityControls {
+    top: 64%;
+    left: 40%;
+  }
+
+  .nameLine {
+    margin-top: 23px;
+  }
+
+  .imgHolder {
+    margin-top: 15px;
+  }
+
+  .leftWrapper {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}

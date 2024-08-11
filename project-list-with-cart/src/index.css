@@ -1,0 +1,31 @@
+body{
+ margin: 0px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.carrier {
+    width: 70%;
+}
+
+.payment {
+    width: 30%;
+    margin-right: 50px;
+}
+
+
+.cartShop {
+    background-color: hsl(20, 50%, 98%);
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cartShop {
+        padding: 0px;
+    }
+}
